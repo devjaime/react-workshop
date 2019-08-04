@@ -1,5 +1,6 @@
 {
   "parser": "babel-eslint",
+  "extends": [],
   "rules": {
     "max-len": "off",
     "react/jsx-filename-extension": "off",
