@@ -20,6 +20,25 @@ const min=1
 //número random entre 1 y 10 para probar funcionamiento de funciones internas de javascript 
 const randomNum=Math.floor(Math.random() * (max - min) + min);
 const imgandGif=<img src={contacto.avatar} />;
+const pruebaStyle={
+  width: "300px",
+  margin: "30px auto",
+  backgroundColor: "#44014C",
+  minHeight: "200px",
+  boxSizing: "border-box",
+  border: "2px solid red",
+ // border-radius: "10px 40px 40px 10px" border radius no reconoce en JSX
+}
+
+const pruebaStyle2={
+  width: "300px",
+  margin: "30px auto",
+  backgroundColor: "#ffe0bd",
+  minHeight: "200px",
+  boxSizing: "border-box",
+  border: "2px solid red",
+  //border-radius: "10px 40px 40px 10px" border radius no reconoce en JSX
+}
 const elementdiv=<div>
                 <h1>Probando JSX</h1>
                 Este es un div con elementh1: {elementh1}, 
@@ -31,6 +50,7 @@ const elementdiv=<div>
                   Elige el número mayor random : {esMayor(randomNum)} número {randomNum}
                 <h1>Incluye imagen o gif animado</h1>
                   Imagen :   {imgandGif}
+                <div style={pruebaStyle}><h2 style={pruebaStyle2}>Estilo con JSX</h2></div>
                 </div>
 
 function datosContacto(contacto){
